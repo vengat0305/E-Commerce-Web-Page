@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Righteous&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "IBM Plex Mono", monospace;
+  font-family: "Righteous", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+  background-color: #fff;
+}
+
+/* global css */
+/* img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+  object-fit: contain;
+} */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* .btn {
+  display: inline-block;
+  border-radius: 8px;
+  padding: 0.5rem 1.5rem;
+  margin-top: 0.5rem;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: #1c2042;
+  color: white;
+  border: 2px solid #1c2042;
+} */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* @keyframes text-pop-up-tr {
+  0% {
+    -webkit-transform: translateY(0) translateX(0);
+    transform: translateY(0) translateX(0);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    text-shadow: none;
+  }
+  100% {
+    -webkit-transform: translateY(-50px) translateX(50px);
+    transform: translateY(-10px) translateX(50px);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    text-shadow: 0 1px 0 #000000, 0 2px 0 #000000, 0 3px 0 #ccc, 0 4px 0 #ccc,
+      0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc, 0 8px 0 #ccc, 0 9px 0 #ccc,
+      0 50px 30px rgba(0, 0, 0, 0.3);
+  }
+} */
+
+@keyframes text-shadow-multicolor2 {
+  0% {
+    text-shadow: 0 0 black, 0 0 red, 0 0 orange, 0 0 yellow, 0 0 green,
+      0 0 skyblue, 0 0 blue, 0 0 white;
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    text-shadow: -1px -1px black, -3px -3px red, -5px -5px orange,
+      -7px -7px yellow, -9px -9px green, -11px -11px skyblue, -13px -13px blue,
+      -15px -15px white;
+    transform: translateX(8%) translateY(8px);
+  }
+}

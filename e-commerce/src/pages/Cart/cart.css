@@ -1,0 +1,41 @@
+.cart {
+  margin-top: 50px;
+  padding: 0px 20px;
+  margin-bottom: 40px;
+}
+.cartItemsTitle {
+  border-radius: 8px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+  font-family: "IBM Plex Mono", monospace;
+  font-style: italic;
+  font-weight: 900;
+  align-items: center;
+  color: gray;
+  font-size: max(1vw, 12px);
+}
+.cartItemsItem {
+  margin: 10px 0px;
+  color: black;
+  background-color: rgb(244, 244, 244);
+  border-radius: 8px;
+  padding: 20px;
+}
+.cartItemsItem img {
+  width: 60px;
+  border-radius: 10%;
+}
+.cart hr {
+  height: 1px;
+  background-color: rgb(190, 190, 190);
+  border: none;
+}
+
+.cartItemsItem .cross {
+  cursor: pointer;
+  padding: 11px;
+  background-color: rgb(218, 218, 218);
+  width: 2rem;
+  border-radius: 5px;
+}

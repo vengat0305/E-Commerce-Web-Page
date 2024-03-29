@@ -1,0 +1,60 @@
+.foodDisplay {
+  /* margin-top: 20px; */
+  padding: 0px 20px;
+  overflow: hidden;
+}
+.foodTop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.foodDisplay h2 {
+  font-size: max(2vw, 26px);
+  font-weight: 100;
+  border-left: 4px solid rgb(255, 255, 0);
+  padding: 0.3rem;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+.foodDisplayParagraph {
+  font-size: 16px;
+  font-family: "IBM Plex Mono", monospace;
+  font-style: italic;
+  font-weight: 600;
+  align-items: center;
+  width: 68rem;
+  line-height: 1.5rem;
+  text-align: center;
+  color: rgb(69, 69, 69);
+}
+.foodDisplayLIst {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  margin-top: 30px;
+  gap: 30px;
+  row-gap: 50px;
+}
+
+@media (max-width: 1050px) {
+  /* .exploreMenu {
+    margin-top: -23rem;
+  } */
+  .foodTop p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 900px) {
+  .foodTop p {
+    font-size: 16px;
+    width: 36rem;
+  }
+}
+@media (max-width: 750px) {
+  .foodTop p {
+    font-size: 16px;
+    width: 35rem;
+  }
+}

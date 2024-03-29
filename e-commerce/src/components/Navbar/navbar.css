@@ -1,0 +1,190 @@
+.navBar {
+  width: 100%;
+  height: auto;
+  /* position: fixed; */
+  margin: 1rem auto;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(255, 245, 112);
+  border: 2px solid #000000;
+  border-radius: 2px;
+  /* backdrop-filter: blur(50px); */
+  transition: 1s;
+  z-index: 50;
+  /* box-shadow: 0px 8px 0px rgb(255, 252, 77); */
+  box-shadow: 0px 29px 0px -19px rgb(0, 0, 0);
+  -webkit-box-shadow: 0px 28px 0px -19px rgb(0, 0, 0);
+  -moz-box-shadow: 0px 29px 0px -19px rgb(0, 0, 0);
+}
+.navBar:hover {
+  background-color: #fefefe;
+  transition: 1s;
+}
+.logo {
+  /* color: rgb(0, 0, 0); */
+  /* font-family: "Righteous", sans-serif; */
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  font-size: 25px;
+  padding: 0.1rem 1rem;
+  font-style: italic;
+  font-family: "IBM Plex Mono", monospace;
+  color: rgb(105, 105, 105);
+  transition: 1s;
+  -webkit-animation: text-pop-up-tr 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: text-pop-up-tr 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.logo:hover {
+  transition: 1s;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+.navbarMenu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.navbarRight {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.navbarMenu li {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  color: #6b6b6b;
+  font-style: italic;
+  font-family: "IBM Plex Mono", monospace;
+}
+.fa-magnifying-glass,
+.fa-bag-shopping {
+  cursor: pointer;
+  font-size: 22px;
+  color: #000000;
+  transition: 1s;
+}
+.fa-magnifying-glass,
+.fa-bag-shopping:hover {
+  transition: 1s;
+  color: rgb(0, 0, 0);
+}
+.navbarMenu,
+#navLi:hover {
+  letter-spacing: 0.1rem;
+  color: rgb(0, 0, 0);
+}
+.navBar .active {
+  padding-bottom: 2px;
+  border-bottom: 2px solid black;
+}
+.navBarShop {
+  position: relative;
+}
+.navBarShop .dot {
+  position: absolute;
+  min-width: 10px;
+  min-height: 10px;
+  background-color: orangered;
+  border-radius: 5px;
+  top: -8px;
+  right: -8px;
+}
+/* .navBarShop {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+} */
+/* .navSearchICon,
+.navBarShopICon {
+  width: 1.5rem;
+} */
+.signInBtn {
+  /* font-family: "Righteous", sans-serif; */
+  font-family: "IBM Plex Mono", monospace;
+  font-style: italic;
+  letter-spacing: 0.1rem;
+  border-radius: 5px;
+  padding: 0.5rem 1.3rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  /* customize */
+  background-color: #000000;
+  border: 2px solid #000000;
+  color: #ffffff;
+  transition: 1s;
+  /* box-shadow: 0px 4px 0px rgb(0, 0, 0); */
+}
+.signInBtn:hover {
+  background-color: rgb(255, 255, 255);
+  border: 2px solid #000000;
+  transition: 1s;
+  color: #000000;
+}
+
+@media (max-width: 1050px) {
+  .navBar .logo {
+    width: 140px;
+  }
+  .navbarMenu {
+    gap: 20px;
+    font-size: 17px;
+  }
+  .navbarRight {
+    gap: 30px;
+  }
+  .navbarRight i {
+    width: 20px;
+  }
+  .navbarRight button {
+    padding: 8px 25px;
+  }
+}
+
+@media (max-width: 900px) {
+  .navBar .logo {
+    width: 140px;
+  }
+  .navbarMenu {
+    gap: 15px;
+    font-size: 16px;
+  }
+  .navbarRight {
+    gap: 20px;
+  }
+  .navbarRight i {
+    width: 18px;
+  }
+  .navbarRight button {
+    padding: 7px 20px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 750px) {
+  .navbarMenu {
+    display: none;
+  }
+  .navbarRight {
+    gap: 20px;
+  }
+  .navbarRight i {
+    width: 18px;
+  }
+  .navbarRight button {
+    padding: 7px 20px;
+    font-size: 15px;
+  }
+}
