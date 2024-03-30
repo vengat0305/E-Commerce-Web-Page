@@ -3,6 +3,17 @@
   padding: 0px 20px;
   margin-bottom: 40px;
 }
+.cartHead {
+  color: rgb(0, 0, 0);
+  font-size: max(2.5vw, 26px);
+  font-weight: 100;
+  margin-bottom: 2rem;
+  background-color: rgb(244, 244, 244);
+  border-radius: 5px;
+  padding: 0.3rem;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
 .cartItemsTitle {
   border-radius: 8px;
   padding: 20px;
@@ -31,11 +42,12 @@
   background-color: rgb(190, 190, 190);
   border: none;
 }
-
 .cartItemsItem .cross {
   cursor: pointer;
   padding: 11px;
-  background-color: rgb(218, 218, 218);
   width: 2rem;
+}
+.cartItemsItem .cross:hover {
+  background-color: rgb(218, 218, 218);
   border-radius: 5px;
 }
